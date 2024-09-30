@@ -4,11 +4,10 @@ leetcode.com/problem-list/string/
 url: https://leetcode.com/problems/design-add-and-search-words-data-structure/description/
 """
 
-from typing import List
 
 class WordDictionary:
     def __init__(self):
-        self.words: dict[str, List[str]] = {}
+        self.words: dict[str, list[str]] = {}
 
     def addWord(self, word: str) -> None:
         if word[0] in self.words.keys():
@@ -30,4 +29,3 @@ class WordDictionary:
                     return True
 
         return False
-    
